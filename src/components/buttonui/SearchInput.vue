@@ -36,11 +36,11 @@
       placeholder="Search for State, District/City, Zip, Neigbourhood/Area"
     />
     <button
+    style="background-color:#E97000;"
       v-bind:class="{
         'rounded-br-lg': !searchFilterIsActive,
       }"
       class="
-        bg-red-600
         hover:bg-red-800
         absolute
         right-0

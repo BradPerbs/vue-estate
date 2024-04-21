@@ -1,6 +1,6 @@
 <template>
   <div v-on:click="returnHomeAndKeepRouteState">
-    <img alt="Vue Estate logo" src="../vue-estate.svg" />
+    <img alt="BGC.rent" src="../logo.svg" />
   </div>
 </template>
 <script>

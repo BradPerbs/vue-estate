@@ -3,7 +3,7 @@
     <search-input v-model="searchData">
       <button
         class="
-          bg-red-600
+          bg-orange-600
           hover:bg-red-800
           absolute
           right-0

@@ -42,7 +42,7 @@
         sf:flex sf:justify-start
         items-center
         sf:w-1/2
-        md:w-32
+        md:w-48
       "
     ></vue-estate-logo>
     <slot></slot>

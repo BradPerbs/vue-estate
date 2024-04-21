@@ -7,7 +7,7 @@
           v-bind:key="priceRange.title"
           v-bind:value="priceRange.id"
         >
-          {{ priceRange.id == 0 ? "No Min" : `$${priceRange.title}` }}
+          {{ priceRange.id == 0 ? "No Min" : `PHP${priceRange.title}` }}
         </dropdown-button-select-option>
       </dropdown-button-select>
     </dropdown-button-select-box>
@@ -19,7 +19,7 @@
           v-bind:key="priceRange.title"
           v-bind:value="priceRange.id"
         >
-          {{ priceRange.id == 0 ? "No Max" : `$${priceRange.title}` }}
+          {{ priceRange.id == 0 ? "No Max" : `PHP${priceRange.title}` }}
         </dropdown-button-select-option>
       </dropdown-button-select>
     </dropdown-button-select-box>
@@ -126,13 +126,13 @@ export default {
           selectedMax.value
         );
 
-        let maxPriceTitle = `- $${maxTitle}`;
+        let maxPriceTitle = `- PHP${maxTitle}`;
         priceIndicator.value =
           selectedMin.value == 0 && selectedMax.value == 0
             ? "Any Price"
             : selectedMax.value == 0
-            ? `$${minPriceTitle}+`
-            : `$${minPriceTitle}${maxPriceTitle}`;
+            ? `PHP${minPriceTitle}+`
+            : `PHP${minPriceTitle}${maxPriceTitle}`;
         store.commit("setPriceRangeInfo", priceIndicator.value);
       }
     });
